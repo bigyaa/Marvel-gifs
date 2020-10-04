@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <h1> App Header</h1>
+      <h1>Marvel Character GIF Board</h1>
       <div className="main-container">
         <MarvelCharacter setCharacter={setCharacter} />
         <hr />
