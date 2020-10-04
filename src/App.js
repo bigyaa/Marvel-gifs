@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import MarvelCharacter from "./components/MarvelCharacter";
+import GifBoard from "./components/GifBoard";
 
-function App() {
+const App = () => {
+  const [character, setCharacter] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> App Header</h1>
+      <div className="main-container">
+        <MarvelCharacter setCharacter={setCharacter} />
+        <hr />
+        <GifBoard character={character} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
