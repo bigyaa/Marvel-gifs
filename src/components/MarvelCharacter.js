@@ -17,18 +17,18 @@ const MarvelCharacter = (props) => {
     setCharacters(data.data.results);
   };
 
-  const handleSelect = (e) =>
-    console.log(e.target) || setCharacter(e.target.value);
+  const handleSelect = (e) => setCharacter(e.target.value);
 
   useEffect(() => {
     fetchCharacters();
   }, []);
 
   return (
-    <div className="marvel-container">
+    <div className="container">
       <h2> Pick a marvel character </h2>
       <div className="select-container">
         <select id="marvelCharacter" onChange={handleSelect}>
+          <option>- Pick a marvel character -</option>
           {characters &&
             characters.map(
               (character) =>
