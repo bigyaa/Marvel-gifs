@@ -25,7 +25,6 @@ const MarvelCharacter = (props) => {
 
   return (
     <div className="container">
-      <h2> Pick a marvel character </h2>
       <div className="select-container">
         <select id="marvelCharacter" onChange={handleSelect}>
           <option>- Pick a marvel character -</option>
