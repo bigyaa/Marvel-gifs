@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
 body {
   background-color: #ffc0cb;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
+  font-family: "Bangers", cursive;
 }
 
-h1 {
+h1,
+select {
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 50px;
   margin: 20px;
   background-color: rgba(250, 250, 250, 0.5);
   padding: 15px;
@@ -36,10 +40,13 @@ select {
   margin: 20px;
   border-radius: 50px;
   letter-spacing: 0.7px;
-  width: 250px;
+  width: 350px;
   font-size: large;
   outline: none;
   text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
 }
 
 button {
@@ -52,4 +59,18 @@ button {
   width: 200px;
   font-size: large;
   letter-spacing: 0.7px;
+}
+
+.header-container {
+  border-bottom: 8px solid antiquewhite;
+  border-top: 4px solid antiquewhite;
+}
+
+.gif-container {
+  border: 8px solid antiquewhite;
+  margin: 0px 50px;
+}
+
+.gif-board {
+  padding: 20px 50px;
 }
