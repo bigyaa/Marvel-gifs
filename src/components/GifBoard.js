@@ -18,12 +18,15 @@ const GifBoard = ({ character }) => {
   };
 
   useEffect(() => {
+    setGifs();
     character && fetchGifs();
   }, [character]);
 
   return character ? (
     <div className="gif-container">
-      <h2>GIF Board of {character || "sth"}</h2>
+      {/* <div className="header-container">
+        <h2>GIF Board of {character || "sth"}</h2>
+      </div> */}
       <div className="gif-board">
         {gifs ? (
           gifs.map(
